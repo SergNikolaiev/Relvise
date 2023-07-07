@@ -77,8 +77,8 @@ a {
 
 .header {
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 
@@ -302,7 +302,7 @@ a {
 .section-cards__card {
   min-width: 280px;
   padding: 40px 35px;
-  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
   background-color: #fff;
   margin: 0 15px;
   flex-basis: calc((100% - 90px) / 3);
@@ -322,18 +322,18 @@ a {
   background-color: #0d5c63;
   transition: all 300ms ease;
   transform: scale(1.05);
-   
-  .section-cards__icon { 
-    fill: #FFF;
-  }
+}
 
-  .section-cards__header {
-    color: #FFF;
-  }
-  
-  .section-cards__text {
-    color: #FFF;
-  }
+.section-cards__card:hover .section-cards__icon {
+  fill: #FFF;
+}
+
+.section-cards__card:hover .section-cards__header {
+  color: #FFF;
+}
+
+.section-cards__card:hover .section-cards__text {
+  color: #FFF;
 }
 
 .section-cards__icon {
